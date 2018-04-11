@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="207.0" layoutY="14.0" text="상품 수정">
+         <font>
+            <Font name="HYdnkM" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutY="42.0" prefHeight="3.0" prefWidth="500.0" />
+      <Separator layoutY="350.0" prefHeight="3.0" prefWidth="500.0" />
+      <Label layoutX="235.0" layoutY="69.0" text="상품명 :">
+         <font>
+            <Font name="HYdnkM" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="118.0" text="가격 :">
+         <font>
+            <Font name="HYdnkM" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="168.0" text="사진 :">
+         <font>
+            <Font name="HYdnkM" size="15.0" />
+         </font>
+      </Label>
+      <TextField id="tf_editname" alignment="CENTER" layoutX="300.0" layoutY="65.0" prefHeight="23.0" prefWidth="188.0" promptText="상품명" />
+      <TextField id="tf_editprice" alignment="CENTER" layoutX="300.0" layoutY="114.0" prefHeight="23.0" prefWidth="188.0" promptText="가격" />
+      <ImageView id="IV_picture" fitHeight="150.0" fitWidth="180.0" layoutX="250.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@default.png" />
+         </image>
+      </ImageView>
+      <Button id="btn_searchpath" layoutX="300.0" layoutY="164.0" mnemonicParsing="false" text="찾기" />
+      <Button id="btn_editconfirm" layoutX="162.0" layoutY="359.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" text="등록" />
+      <Button id="btn_editcancel" layoutX="268.0" layoutY="359.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" text="취소" />
+      <TableView id="edit_tableView" layoutX="14.0" layoutY="51.0" prefHeight="292.0" prefWidth="206.0">
+        <columns>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

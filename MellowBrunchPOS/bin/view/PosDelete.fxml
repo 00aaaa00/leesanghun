@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="72.0" layoutY="14.0" text="상품 삭제">
+         <font>
+            <Font name="HYdnkM" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutY="42.0" prefHeight="3.0" prefWidth="217.0" />
+      <Separator layoutY="350.0" prefHeight="3.0" prefWidth="500.0" />
+      <Button id="btn_delconfirm" layoutX="22.0" layoutY="359.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" text="삭제" />
+      <Button id="btn_delcancel" layoutX="140.0" layoutY="359.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" text="취소" />
+      <TableView id="del_tableView" layoutX="14.0" layoutY="51.0" prefHeight="292.0" prefWidth="206.0">
+        <columns>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

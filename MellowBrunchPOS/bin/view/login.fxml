@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="pane" prefHeight="228.0" prefWidth="346.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.LoginController">
+	<children>
+		<VBox alignment="CENTER">
+			<padding>
+				<Insets bottom="20" left="10" right="10" top="20" />
+			</padding>
+			<spacing>10</spacing>
+			<children>
+				<HBox alignment="CENTER">
+					<children>
+						<ImageView fitHeight="110.0" fitWidth="351.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../image/logo.png" />
+							</image>
+						</ImageView>
+					</children>
+				</HBox>
+				<Separator prefHeight="30" prefWidth="400" />
+				<HBox alignment="CENTER" />
+				<HBox alignment="CENTER">
+					<children>
+						<Label text="관리자 비밀번호 : ">
+							<font>
+								<Font name="HYdnkM" size="15.0" />
+							</font>
+						</Label>
+						<PasswordField fx:id="txtPassword" />
+					</children>
+				</HBox>
+				<HBox alignment="CENTER">
+					<padding>
+						<Insets bottom="20" left="10" right="10" top="20" />
+					</padding>
+					<spacing>20</spacing>
+					<children>
+						<Button fx:id="btnLogin" text="로그인">
+							<font>
+								<Font name="HYdnkM" size="15.0" />
+							</font>
+						</Button>
+						<Button fx:id="btnCancel" text="닫기">
+							<font>
+								<Font name="HYdnkM" size="15.0" />
+							</font>
+						</Button>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>

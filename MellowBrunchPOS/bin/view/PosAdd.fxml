@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label layoutX="93.0" layoutY="14.0" text="새 상품 등록">
+			<font>
+				<Font name="HYdnkM" size="20.0" />
+			</font>
+		</Label>
+		<Separator layoutY="42.0" prefHeight="3.0" prefWidth="300.0" />
+		<Separator layoutY="359.0" prefHeight="3.0" prefWidth="300.0" />
+		<Label layoutX="36.0" layoutY="69.0" text="상품명 :">
+			<font>
+				<Font name="HYdnkM" size="15.0" />
+			</font>
+		</Label>
+		<Label layoutX="53.0" layoutY="118.0" text="가격 :">
+			<font>
+				<Font name="HYdnkM" size="15.0" />
+			</font>
+		</Label>
+		<Label layoutX="53.0" layoutY="168.0" text="사진 :">
+			<font>
+				<Font name="HYdnkM" size="15.0" />
+			</font>
+		</Label>
+		<TextField fx:id="tf_newproductname" alignment="CENTER"
+			layoutX="99.0" layoutY="65.0" prefHeight="23.0" prefWidth="188.0"
+			promptText="상품명" />
+		<TextField fx:id="tf_newproductprice" alignment="CENTER"
+			layoutX="99.0" layoutY="114.0" prefHeight="23.0" prefWidth="188.0"
+			promptText="가격" />
+		<ImageView fx:id="IV_picture" fitHeight="150.0" fitWidth="180.0"
+			layoutX="99.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../image/default.png" />
+			</image>
+		</ImageView>
+		<Button fx:id="btn_searchpath" layoutX="99.0" layoutY="164.0"
+			mnemonicParsing="false" text="찾기" />
+		<Button fx:id="btn_addnew" layoutX="72.0" layoutY="363.0"
+			mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" text="등록" />
+		<Button fx:id="btn_addcancel" layoutX="161.0" layoutY="363.0"
+			mnemonicParsing="false" prefHeight="35.0" prefWidth="65.0" text="취소" />
+	</children>
+</AnchorPane>
